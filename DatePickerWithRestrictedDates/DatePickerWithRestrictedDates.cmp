@@ -1,11 +1,11 @@
 <aura:component>
     <ltng:require styles="{!$Resource.JqueryUI + '/jquery-ui-1.12.1/jquery-ui.min.css'}"
                   scripts="{!join(',', 
-                           $Resource.jQuery ,
+                           $Resource.jQuery,
                            $Resource.JqueryUI + '/jquery-ui-1.12.1/jquery-ui.min.js')
                            }" afterScriptsLoaded="{!c.configureDatepicker}"/>
 	
-    <div class="slds-form-element" id="Preferred_deployment_date__c">
+    <div class="slds-form-element">
         <label class="slds-form-element__label" for="datepicker">Date</label>
         <div class="slds-form-element__control">
             <lightning:icon iconName="utility:event"/>
