@@ -1,12 +1,12 @@
 ({
 	configureDatepicker : function(component, event, helper) {
-        var availableDates = ['2019-06-21', '2019-06-27', '2019-06-28'];
+        var disabledDates = ['2019-06-21', '2019-06-27', '2019-06-28'];
 
         $(document).ready(function(){       
             $('#datepicker').datepicker({
                 beforeShowDay: function(date){
                     var dateStr = jQuery.datepicker.formatDate('yy-mm-dd', date);
-        			return [ availableDates.indexOf(dateStr) == -1 ];
+        			return [ disabledDates.indexOf(dateStr) == -1 ];
                 },
                 minDate : 0,
                 dayNamesMin : ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
